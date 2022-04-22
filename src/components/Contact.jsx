@@ -2,10 +2,18 @@ import React from 'react';
 
 export default function Contact() {
 	return (
-		<div className='row'>
+		<div
+			className='row'
+			style={{
+				display: 'flex',
+				flexDirection: 'column',
+				justifyContent: 'center',
+				height: '80%',
+			}}
+		>
 			<div className='col-md-10 offset-md-1'>
 				<h2 className='text-center mt-5'>Contact our team</h2>
-				<div className='card bg-transparent border-0 my-5'>
+				<div className='card bg-transparent border-0'>
 					<form className='card-body p-lg-4'>
 						<div className='text-center'></div>
 						<div className='mb-3'>
