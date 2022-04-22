@@ -27,7 +27,7 @@ function About() {
 					<a href=""><i className="fab fa-instagram"></i></a>
 				</div> */}
 				</div>
-				<img className='image-section' src='/images/Aboutus.jpg' alt />
+				{/* <img className='image-section' src='/images/Aboutus.jpg' alt /> */}
 			</div>
 		</div>
 	);

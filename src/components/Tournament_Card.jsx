@@ -14,7 +14,9 @@ export default function Tournament_Card({ name, place }) {
 
 	return (
 		<div className='Card'>
-			<div style={{ backgroundColor: colorIndex[place] }}>{name}</div>
+			<div className='Team' style={{ backgroundColor: colorIndex[place] }}>
+				{name}
+			</div>
 		</div>
 	);
 }
