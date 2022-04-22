@@ -5,7 +5,9 @@ import './Home.css';
 export default function Home() {
 	return (
 		<div className='Home'>
-			<div className='Image'></div>
+			<div className='Image'>
+				<img src='/images/shape.png' alt='shape' />
+			</div>
 			<div className='Newsletter'>
 				<h6>Subscribe to our Newsletter</h6>
 				<form>

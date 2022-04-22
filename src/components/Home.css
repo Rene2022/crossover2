@@ -6,11 +6,11 @@
 }
 
 .Image {
-	background-image: url('../../public/images/left.png');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
 	height: 70vh;
+}
+.Image > img {
+	height: 100%;
+	padding: 50px;
 }
 
 .Newsletter {
