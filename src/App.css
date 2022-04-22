@@ -1,0 +1,68 @@
+* {
+	padding: 0;
+}
+
+.App {
+	display: flex;
+	border: solid black 1px;
+	margin: 0 auto;
+	justify-content: space-between;
+	padding: 0;
+	height: 100vh;
+	width: 100vw;
+	max-width: 1200px;
+}
+
+.Navbar {
+	display: flex;
+	justify-content: space-between;
+}
+.Navbar-Right {
+	display: flex;
+	justify-content: space-around;
+	width: 60%;
+}
+.Navbar-Right a {
+	text-decoration: none;
+	color: whitesmoke;
+	font-size: 1rem;
+	font-weight: bold;
+	padding: 10px;
+}
+.Navbar-Left {
+	display: flex;
+	justify-content: space-between;
+	width: 40%;
+}
+.Navbar-Left img {
+	text-decoration: none;
+	color: black;
+	margin: 15px;
+	height: 1.3rem;
+}
+
+.ContentLeft {
+	border: solid black 1px;
+	background-image: url('../public/images/left.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 25%;
+}
+.ContentCenter {
+	border: solid black 1px;
+	width: 50%;
+	background-image: url('../public/images/background.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: whitesmoke;
+}
+.ContentRight {
+	border: solid black 1px;
+	background-image: url('../public/images/right.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 25%;
+}

@@ -1,0 +1,34 @@
+.Home {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.Image {
+	height: 70vh;
+}
+.Image > img {
+	height: 100%;
+	padding: 50px;
+}
+
+.Newsletter {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 50%;
+}
+
+.Newsletter > form > button {
+	background-color: #ef3fa2;
+	border: none;
+	color: whitesmoke;
+	padding: 2px 5px;
+	font-size: 1rem;
+	font-weight: bold;
+	cursor: pointer;
+}
+.Newsletter > form > input {
+	text-align: center;
+}
