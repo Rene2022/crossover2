@@ -1,6 +1,4 @@
 import React from 'react';
-//style
-import './Contact.css';
 
 export default function Contact() {
 	return (
@@ -46,7 +44,15 @@ export default function Contact() {
 							></textarea>
 						</div>
 						<div className='text-center py-2'>
-							<button type='submit' className='btn bg-white py-3 mb-4'>
+							<button
+								type='submit'
+								className='btn py-3 mb-4'
+								style={{
+									backgroundColor: '#ef3fa2',
+									color: 'whitesmoke',
+									padding: '5px 20px',
+								}}
+							>
 								Submit
 							</button>
 						</div>

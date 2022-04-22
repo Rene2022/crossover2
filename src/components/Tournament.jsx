@@ -62,10 +62,10 @@ export default function Tournament() {
 
 		for (let index5 = 0; index5 < 2; index5++) {
 			if (Math.floor(Math.random() * 100) < 50) {
-				let team3 = { name: listOfLists[1][index5].name, gridIndex: 6 };
+				let team3 = { name: listOfLists[1][index5 * 2].name, gridIndex: 6 };
 				newList.push(team3);
 			} else {
-				let team3 = { name: listOfLists[1][index5 + 1].name, gridIndex: 6 };
+				let team3 = { name: listOfLists[1][index5 * 2 + 1].name, gridIndex: 6 };
 				newList.push(team3);
 			}
 		}
@@ -105,7 +105,7 @@ export default function Tournament() {
 				</div>
 				<div className='Group'>
 					{teams[3].map((team, index) => (
-						<Tournament_Card key={index} name={team.name} place={team.gridIndex} row={2} />
+						<Tournament_Card key={index} name={team.name} place={team.gridIndex} row={3} />
 					))}
 				</div>
 			</div>
