@@ -18,7 +18,7 @@ export default function Tournament() {
 		"Beholder"
 	]
 
-	const [teams, setTeams] = useState([[],[]]);
+	const [teams, setTeams] = useState([[],[],[],[]]);
 
 	useEffect(() => {
 		let copyOfList = listOfPeople.slice(); 
@@ -38,21 +38,41 @@ export default function Tournament() {
 
 		newList = [];
 
-		for (let index3 = 0; index3 < 2; index3++) {
-			for (let index4 = 0; index4 < 2; index4++) {
-				if(Math.floor(Math.random() * 100) < 50){
-					let team = {name: listOfLists[0][index3*2].name, gridIndex: index3+4};
-					newList.push(team);
-				}
-				else{
-					let team = {name: listOfLists[0][(index3*2)+1].name, gridIndex: index3+4};
-					newList.push(team);
-				}
+		for (let index3 = 0; index3 < 4; index3++) {
+			if(Math.floor(Math.random() * 100) < 50){
+				let team = {name: listOfLists[0][index3*2].name, gridIndex: Math.floor((index3/2)+4)};
+				newList.push(team);
+			}
+			else{
+				let team = {name: listOfLists[0][(index3*2)+1].name, gridIndex: Math.floor((index3/2)+4)};
+				newList.push(team);
 			}
 			
 			console.log("test", index3*2);
 		}
 
+		listOfLists.push(newList);
+
+		newList = [];
+
+		for (let index5 = 0; index5 < 2; index5++) {
+			if(Math.floor(Math.random() * 100) < 50){
+				let team3 = {name: listOfLists[1][index5].name, gridIndex: 6};
+				newList.push(team3);
+			}
+			else{
+				let team3 = {name: listOfLists[1][index5+1].name, gridIndex: 6};
+				newList.push(team3);
+			}
+		}
+
+		listOfLists.push(newList);
+
+		newList = [];
+
+		let team2 = {name: listOfLists[2][Math.floor(Math.random() * 2)].name, gridIndex: 7};
+		newList.push(team2);
+		
 		listOfLists.push(newList);
 
 		console.log(listOfLists);
@@ -61,13 +81,21 @@ export default function Tournament() {
     }, [])
 
 	return (
-		<div>
+		<div >
 			{teams[0].map((team, index) => (
             <Tournament_Card key={index} name={team.name} place={team.gridIndex} row={0}/>
             ))}
 			<br/>
 			{teams[1].map((team, index) => (
-            <Tournament_Card key={index} name={team.name} place={team.gridIndex} row={0}/>
+            <Tournament_Card key={index} name={team.name} place={team.gridIndex} row={1}/>
+            ))}
+			<br/>
+			{teams[2].map((team, index) => (
+            <Tournament_Card key={index} name={team.name} place={team.gridIndex} row={2}/>
+            ))}
+			<br/>
+			{teams[3].map((team, index) => (
+            <Tournament_Card key={index} name={team.name} place={team.gridIndex} row={2}/>
             ))}
 		</div>
 	);
