@@ -1,0 +1,22 @@
+.Bracket {
+	display: flex;
+	align-items: center;
+}
+
+.Group {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.Card {
+	padding: 5px;
+}
+
+.Tournament {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 60%;
+	align-items: center;
+}
