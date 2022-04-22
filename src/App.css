@@ -10,7 +10,7 @@
 	-webkit-box-sizing: border-box;
 	border: solid black 2px;
 	margin: 0 auto;
-	justify-content: space-between;
+	justify-content: center;
 	padding: 0;
 	height: 100vh;
 	width: 100vw;
@@ -68,14 +68,14 @@
 	width: 30%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
 	.ContentLeft {
-		width: 0;
-	}
-	.ContentRight {
 		width: 0;
 	}
 	.ContentCenter {
 		width: 100%;
+	}
+	.ContentRight {
+		width: 0;
 	}
 }
