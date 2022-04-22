@@ -12,7 +12,7 @@ function App() {
 	return (
 		<BrowserRouter>
 			<div className='App container'>
-				<div className='ContentLeft'></div>
+				<div className='ContentLeft col-sm-0'></div>
 				<div className='ContentCenter'>
 					<div className='Navbar'>
 						<div className='Navbar-Left'>

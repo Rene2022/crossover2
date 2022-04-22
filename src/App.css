@@ -68,3 +68,14 @@
 	width: 30%;
 }
 
+@media screen and (max-width: 768px) {
+	.ContentLeft {
+		width: 0;
+	}
+	.ContentRight {
+		width: 0;
+	}
+	.ContentCenter {
+		width: 100%;
+	}
+}

@@ -3,7 +3,7 @@ import React from 'react';
 export default function Contact() {
 	return (
 		<div className='row'>
-			<div className='col-md-10 offset-md-1 pt-5'>
+			<div className='col-md-10 offset-md-1'>
 				<h2 className='text-center mt-5'>Contact our team</h2>
 				<div className='card bg-transparent border-0 my-5'>
 					<form className='card-body p-lg-4'>
